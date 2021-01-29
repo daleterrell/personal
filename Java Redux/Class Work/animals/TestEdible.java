@@ -1,0 +1,17 @@
+package com.aim.animals;
+
+public class TestEdible {
+
+    public static void main(String[] args) {
+        Object[] objects = { new Cow(), new Chicken(), new Cat() };
+        for (int i = 0; i < objects.length; i++) {
+            if (objects[i] instanceof Edible) {
+                // System.out.println(((Edible) objects[i]).howToEat());
+            }
+
+            if (objects[i] instanceof Animal) {
+                // System.out.println(((Animal) objects[i]).makeNoise());
+            }
+        }
+    }
+}
